@@ -2,9 +2,10 @@
 Summary:	A simple plasmoid that controls amaroK 2 using D-Bus
 Name:		plasma-applet-playwolf
 Version: 	0.3.2
-Release: 	%mkrel 3
+Release: 	%mkrel 4
 Source0:    93882-%oname-%version.tar.bz2
 Patch0: kde42.patch
+Patch1:		playwolf-0.3.2-plasma-4.2.patch
 License: 	GPLv2+
 Group: 		Graphical desktop/KDE
 Url: 		http://kde-look.org/content/show.php/PlayWolf?content=93882
@@ -27,6 +28,7 @@ This is a simple plasmoid that controls amaroK 2 using D-Bus.
 %prep
 %setup -q -n %oname
 %patch0 -p1
+%patch1 -p1
 
 %build
 %cmake_kde4
@@ -34,9 +36,7 @@ This is a simple plasmoid that controls amaroK 2 using D-Bus.
 
 %install
 rm -rf %{buildroot}
-cd build
-%{makeinstall_std}
-cd -
+%{makeinstall_std} -C build
 
 %clean
 rm -rf %{buildroot}
