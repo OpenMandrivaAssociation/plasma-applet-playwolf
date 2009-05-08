@@ -1,7 +1,7 @@
 %define     oname  playwolf
 Summary:	A simple plasmoid that controls amaroK 2 using D-Bus
 Name:		plasma-applet-playwolf
-Version: 	0.7
+Version: 	0.7.2
 Release: 	%mkrel 1
 Source0:    http://playwolf.googlecode.com/files/%oname-%version.tar.bz2
 License: 	GPLv2+
