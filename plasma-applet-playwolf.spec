@@ -2,7 +2,7 @@
 Summary:	A simple plasmoid that controls amaroK 2 using D-Bus
 Name:		plasma-applet-playwolf
 Version: 	0.8.1
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Source0:    http://playwolf.googlecode.com/files/%oname-%version.tar.bz2
 License: 	GPLv2+
 Group: 		Graphical desktop/KDE
