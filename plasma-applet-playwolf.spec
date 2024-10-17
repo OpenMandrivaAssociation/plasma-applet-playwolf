@@ -6,7 +6,7 @@ Release: 	%mkrel 2
 Source0:    http://playwolf.googlecode.com/files/%oname-%version.tar.bz2
 License: 	GPLv2+
 Group: 		Graphical desktop/KDE
-Url: 		http://kde-look.org/content/show.php/PlayWolf?content=93882
+Url: 		https://kde-look.org/content/show.php/PlayWolf?content=93882
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	amarok >= 3:1.80
 Obsoletes:  plasma-applet-am4rok
